@@ -1,11 +1,10 @@
-import classes from "../Toolbar.module.css"
+import classes from "./Toolbar.module.css"
 
 
-const Toolbar = ({children})=>{
+const Toolbar = ({})=>{
     return(
         <div className={classes.Toolbar}>
-            Drawer
-            {children}
+            Toolbar
         </div>
     )
 }

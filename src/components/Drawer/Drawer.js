@@ -1,12 +1,11 @@
 
-import classes from "../Drawer.module.css"
+import classes from "./Drawer.module.css"
 
 
-const Drawer = ({children})=>{
+const Drawer = ({})=>{
     return(
         <div className={classes.Drawer}>
             Drawer
-            {children}
         </div>
     )
 }
