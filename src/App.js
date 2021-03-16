@@ -1,3 +1,4 @@
+import Loyout from "./components/Loyout/Loyout"
 
 function App() {
   return (
