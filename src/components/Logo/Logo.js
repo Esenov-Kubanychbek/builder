@@ -4,7 +4,7 @@ import logo from "../../images/logo.svg"
 const Logo = ()=>{
     return(
         <div className={classes.Logo}>
-            <img alt="photo" src={logo} />
+            <img src={logo} alt="pizza logo" />
             <span>Pizza</span>
         </div>
     )
