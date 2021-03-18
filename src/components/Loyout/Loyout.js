@@ -1,4 +1,4 @@
-import Drawer from "../Drawer/Drawer"
+import Drawer from "./Drawer/Drawer"
 import Toolbar from "../Toolbar/Toolbar"
 import classes from "./Loyout.module.css"
 
