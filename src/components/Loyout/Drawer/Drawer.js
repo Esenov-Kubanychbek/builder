@@ -3,7 +3,7 @@ import classes from "./Drawer.module.css"
 import Logo from "../../Logo/Logo"
 import Nav from "../../Nav/Nav"
 
-const Drawer = ({})=>{
+const Drawer = ()=>{
     return(
         <div className={classes.Drawer}>
             <Logo />

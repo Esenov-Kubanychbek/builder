@@ -1,5 +1,5 @@
 import Drawer from "./Drawer/Drawer"
-import Toolbar from "../Toolbar/Toolbar"
+import Toolbar from "./Toolbar/Toolbar"
 import classes from "./Loyout.module.css"
 
 
