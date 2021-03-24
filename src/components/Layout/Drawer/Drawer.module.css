@@ -1,0 +1,17 @@
+.Drawer .content{
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rgb(31, 30, 36);
+    width: 300px;
+    height: 100%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.322);
+}
+
+.open{
+    transform: translateX(0);
+}
+
+.close{
+    transform: translateX(-310px);
+}
