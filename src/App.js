@@ -2,7 +2,7 @@ import Layout from "./components/Layout/Layout";
 import PizzaBuilder from "./components/PizzaBuilder/PizzaBuilder";
 import "./App.css";
 
-function App() {
+const App = () => {
   return (
     <div className="App">
       <Layout>

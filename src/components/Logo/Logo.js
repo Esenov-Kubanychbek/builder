@@ -6,7 +6,6 @@ const Logo = () => {
     <div className={classes.Logo}>
       <img src={logo} alt="Logo of the Pizza project" />
       <div>Pizza</div>
-      fdbk dfjknbf
     </div>
   );
 }
