@@ -1,6 +1,6 @@
 import PizzaIngredient from "../PizzaIngredient/PizzaIngredient";
 import classes from "./PizzaPreview.module.css";
-import ingredientsBackground from "../../../images/cheese.svg";
+import ingredientsBackground from "../../../images/korzina.jpg";
 
 const PizzaPreview = ({ ingredients }) => {
   const result = [];
@@ -14,7 +14,7 @@ const PizzaPreview = ({ ingredients }) => {
     <div className={classes.PizzaPreview}>
       <div
         className={classes.ingredients}
-        style={{ backgroundImage: `url(${ingredientsBackground})` }}>
+        style={{ backgroundImage: `url(${ingredientsBackground})`}}>
         {result}
       </div>
     </div>
