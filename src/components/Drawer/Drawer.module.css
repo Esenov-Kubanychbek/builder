@@ -1,10 +1,10 @@
 .Drawer .content {
-  width: 250px;
+  width: 280px;
   height: 100%;
   position: fixed;
   top: 0;
   left: 0;
-
+  z-index: 20;
   font-size: 2rem;
   color: white;
   background-color: tomato;
@@ -16,7 +16,7 @@
   transform: translateX(0);
 }
 .close {
-  transform: translateX(-260px);
+  transform: translateX(-290px);
 }
 
 @media (min-width: 550px) {

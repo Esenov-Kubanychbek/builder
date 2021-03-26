@@ -12,4 +12,8 @@
   width: 380px;
   height: 380px;
   position: sticky;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
 }
