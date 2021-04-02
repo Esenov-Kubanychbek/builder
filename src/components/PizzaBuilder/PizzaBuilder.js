@@ -2,6 +2,7 @@ import classes from "./PizzaBuilder.module.css";
 import PizzaPreview from "./PizzaPreview/PizzaPreview";
 import PizzaControls from "./PizzaControls/PizzaControls";
 import { useState } from "react";
+import { createEvent } from "@testing-library/dom";
 
 const PizzaBuilder = () => {
   const [ingredients, setIngredients] = useState({
@@ -26,8 +27,8 @@ const PizzaBuilder = () => {
   }
 
   return (
-    <div className={classes.PizzaBuilder}>
-      <PizzaPreview ingredients={ingredients} />
+    <div className={classes.PizzaBuilder} >
+      <PizzaPreview ingredients={ingredients}/>
       <PizzaControls
         ingredients={ingredients}
         addIngredient={addIngredient}

@@ -3,7 +3,7 @@
   height: 400px;
   margin-right: 1rem;
   margin-bottom: 1rem;
-
+  border: 1px solid red ;
   display: flex;
   justify-content: center;
   align-items: center;

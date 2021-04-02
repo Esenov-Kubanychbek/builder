@@ -1,4 +1,5 @@
 import PizzaControl from "./PizzaControl/PizzaControl";
+import Fruit from "./Fruit/Fruit";
 import classes from "./PizzaControls.module.css";
 
 const PizzaControls = ({ ingredients, addIngredient, removeIngredient }) => {
@@ -10,14 +11,22 @@ const PizzaControls = ({ ingredients, addIngredient, removeIngredient }) => {
       remove={removeIngredient}
       type={ingredient} />)
   }
-
+ 
+  
+  
   return (
     <div className={classes.PizzaControls}>
       <strong>Ingredients</strong>
       
+      <select>
+
+        <option value="pizza"> PizzaControls</option>
+        <option value="fruit">Fruit</option>  
+      </select>
       {results}
     </div>
   );
 }
+
 
 export default PizzaControls;

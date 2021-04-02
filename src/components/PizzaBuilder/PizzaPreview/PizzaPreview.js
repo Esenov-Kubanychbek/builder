@@ -1,24 +1,11 @@
-import PizzaIngredient from "../PizzaIngredient/PizzaIngredient";
 import classes from "./PizzaPreview.module.css";
-import ingredientsBackground from "../../../images/korzina.jpg";
-
-const PizzaPreview = ({ ingredients }) => {
-  const result = [];
-  for (const ingredient in ingredients) {
-    for (let i = 0; i < ingredients[ingredient]; i++) {
-      result.push(<PizzaIngredient key={ingredient + i} type={ingredient} />)
-    }
-  }
+import Korzina from "./Korzina/Korzina"
 
   return (
     <div className={classes.PizzaPreview}>
-      <div
-        className={classes.ingredients}
-        style={{ backgroundImage: `url(${ingredientsBackground})`}}>
-        {result}
-      </div>
+      {Korzina}
     </div>
   );
-}
+
 
 export default PizzaPreview;
