@@ -11,8 +11,7 @@ const PizzaControls = ({ ingredients, addIngredient, removeIngredient }) => {
       remove={removeIngredient}
       type={ingredient} />)
   }
- 
-  
+
   
   return (
     <div className={classes.PizzaControls}>
@@ -20,10 +19,11 @@ const PizzaControls = ({ ingredients, addIngredient, removeIngredient }) => {
       
       <select>
 
-        <option value="pizza"> PizzaControls</option>
-        <option value="fruit">Fruit</option>  
+        <option id="pizza" value="pizza"> Pizza</option>
+        <option id="fruit" value="fruit">Fruit</option>  
       </select>
       {results}
+
     </div>
   );
 }
