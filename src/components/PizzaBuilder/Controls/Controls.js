@@ -9,10 +9,10 @@ const Controls = () => {
     const [example,setExample] = useState("Example1")
 
   let result = ""
-  if (example === "Pizza"){
+  if (example == "Pizza"){
     result = <PizzaControls/>
   }
-  else if (example === "Fruit"){
+  else if (example == "Fruit"){
     result = <Fruit/>
   }
   function changes(event) {
@@ -23,7 +23,7 @@ const Controls = () => {
             <select onChange={changes}>
                 <option> Pizza</option>
                 <option>Fruit</option>
-            </select>
+            </select>{result}
         </div>
      );
 }
