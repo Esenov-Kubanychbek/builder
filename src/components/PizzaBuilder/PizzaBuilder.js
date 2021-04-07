@@ -1,6 +1,6 @@
 import PizzaPreview from "./PizzaPreview/PizzaPreview";
 import PizzaControls from "./PizzaControls/PizzaControls";
-
+import Control from "./Controls/Controls"
 import classes from "./PizzaBuilder.module.css";
 import { useState } from "react";
 import OrderSummary from "./OrderSummary/OrderSummary";
@@ -61,6 +61,7 @@ const PizzaBuilder = () => {
       <PizzaPreview
         ingredients={ingredients}
         price={price} />
+        <Control/>
       <PizzaControls
         canBuy={canBuy}
         setIsBuying={setIsBuying}
