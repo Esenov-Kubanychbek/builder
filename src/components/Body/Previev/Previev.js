@@ -15,7 +15,8 @@ const Previev = ({ ingredients, price }) => {
       
         <img
           className={classes.ingredients}
-          src={korzina}/>
+          src={korzina}
+          alt="korzina"/>
           {result}
         
      
