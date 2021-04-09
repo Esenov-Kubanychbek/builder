@@ -7,10 +7,8 @@ const FruitControls = ({
   removeIngredient,
 }) => {
   const results = [];
-  let total = 0;
   for (const ingredient in ingredients) {
     // Add ingredient number to totals number
-    total += ingredients[ingredient];
     // Render pizza control for this ingredient
     results.push(<FruitControl
         key={ingredient}
