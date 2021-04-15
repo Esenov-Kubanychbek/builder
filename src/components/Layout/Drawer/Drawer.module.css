@@ -1,13 +1,14 @@
 .Drawer .content {
-  width: 290px;
+  width: 300px;
   height: 100%;
   position: fixed;
   top: 0;
   left: 0;
-  z-index: 2;
+  z-index: 1;
+
   font-size: 2rem;
   color: white;
-  background-color: rgb(74, 216, 161);
+  background-color: #017AE6;
   box-shadow: 0 0 10px rgba(0, 0, 0, .5);
   transition: transform .3s ease-out;
 }
@@ -16,7 +17,7 @@
   transform: translateX(0);
 }
 .close {
-  transform: translateX(-300px);
+  transform: translateX(-310px);
 }
 
 @media (min-width: 550px) {

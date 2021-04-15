@@ -1,9 +1,0 @@
-.Select{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    text-align: center;
-    flex: 0 0 250px;
-    background-color: coral;
-    height: 100px;
-}

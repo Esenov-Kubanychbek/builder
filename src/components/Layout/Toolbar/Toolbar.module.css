@@ -4,10 +4,12 @@
   position: sticky;
   top: 0;
   left: 0;
+  z-index: 1;
+  padding: 0 1rem;
 
   font-size: 2rem;
   color: white;
-  background-color: rgb(74, 216, 161);
+  background-color: #017AE6;
   box-shadow: 0 0 10px rgba(0, 0, 0, .5);
 }
 
