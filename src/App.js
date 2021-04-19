@@ -1,13 +1,19 @@
 import Layout from "./components/Layout/Layout";
-import PizzaBuilder from "./components/PizzaBuilder/PizzaBuilder"
+import Menu from "./components/Menu/Menu"
 
 import "./App.css";
+import { Route, Switch } from "react-router";
+import Checkout from "./components/Checkout/Checkout";
 
 const App = () => {
   return (
     <div className="App">
       <Layout>
-        <PizzaBuilder />
+        <Switch>
+          <Route path="/" component={Menu} exact/>
+          <Route path="/checkout" component={Checkout}/>
+
+        </Switch>
       </Layout>
     </div>
   );

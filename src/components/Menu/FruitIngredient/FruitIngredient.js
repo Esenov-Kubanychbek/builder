@@ -1,6 +1,6 @@
 import React from "react";
 
-import classes from "./PizzaIngredient.module.css";
+import classes from "./FruitIngredient.module.css";
 import salamiBackground from "../../../images/salami.svg";
 import tomatoBackground from "../../../images/tomato.svg";
 import blackOliveBackground from "../../../images/blackOlive.svg";
@@ -8,7 +8,7 @@ import greenOliveBackground from "../../../images/greenOlive.svg";
 import redPepperBackground from "../../../images/redPepper.svg";
 import yellowPepperBackground from "../../../images/yellowPepper.svg";
 
-const PizzaIngredient = ({ type, fixed }) => {
+const FruitIngredient = ({ type, fixed }) => {
   const types = {
     salami: { backgroundImage: `url(${salamiBackground})`, width: "35px", height: "35px" },
     tomato: { backgroundImage: `url(${tomatoBackground})`, width: "35px", height: "35px" },
@@ -48,8 +48,8 @@ const PizzaIngredient = ({ type, fixed }) => {
   types[type].transform = `rotate(${Math.round(Math.random() * 360)}deg)`;
 
   return (
-    <div className={classes.PizzaIngredient} style={types[type]}></div>
+    <div className={classes.FruitIngredient} style={types[type]}></div>
   );
 }
 
-export default React.memo(PizzaIngredient);
+export default React.memo(FruitIngredient);

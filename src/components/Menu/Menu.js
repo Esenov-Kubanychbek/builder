@@ -1,14 +1,14 @@
-import PizzaPreview from "./PizzaPreview/PizzaPreview";
-import PizzaControls from "./PizzaControls/PizzaControls";
+import Preview from "./Preview/Preview";
+import Controls from "./Controls/Controls";
 
-import classes from "./PizzaBuilder.module.css";
+import classes from "./Menu.module.css";
 import { useEffect, useState } from "react";
 import axios from "axios";
 import Modal from "../UI/Modal/Modal";
 import OrderSummary from "./OrderSummary/OrderSummary";
 import Button from "../UI/Button/Button";
 
-const PizzaBuilder = () => {
+const Menu = ({ history }) => {
   const prices = {
     tomato: 3.5,
     salami: 4,
@@ -25,7 +25,7 @@ const PizzaBuilder = () => {
 
   function loadDefaults() {
     axios
-      .get('https://builder-bb694-default-rtdb.firebaseio.com/.json')
+      .get('https://builder-a51d0-default-rtdb.firebaseio.com/default.json')
       .then(response => {
         setPrice(response.data.price);
 
@@ -62,7 +62,7 @@ const PizzaBuilder = () => {
 
   function finishOrdering() {
     axios
-      .post('https://builder-bb694-default-rtdb.firebaseio.com/.json', {
+      .post('https://builder-a51d0-default-rtdb.firebaseio.com/orders.json', {
         ingredients: ingredients,
         price: price,
         address: "1234 Jusaeva str",
@@ -72,20 +72,16 @@ const PizzaBuilder = () => {
       .then(() => {
         setOrdering(false);
         loadDefaults();
+        history.push('/checkout');
       });
   }
 
   return (
-    <div className={classes.PizzaBuilder}>
-      <PizzaPreview
+    <div className={classes.Menu}>
+      <Preview
         ingredients={ingredients}
         price={price} />
-      <PizzaControls
-        ingredients={ingredients}
-        addIngredient={addIngredient}
-        removeIngredient={removeIngredient}
-        startOrdering={startOrdering}
-        />
+      
       <Modal
         show={ordering}
         cancel={stopOrdering}>
@@ -96,8 +92,14 @@ const PizzaBuilder = () => {
           <Button onClick={finishOrdering} green>Checkout</Button>
           <Button onClick={stopOrdering}>Cancel</Button>
         </Modal>
+        <Controls
+        ingredients={ingredients}
+        addIngredient={addIngredient}
+        removeIngredient={removeIngredient}
+        startOrdering={startOrdering}
+        />
     </div>
   );
 }
 
-export default PizzaBuilder;
+export default Menu;
