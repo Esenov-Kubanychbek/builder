@@ -1,12 +1,17 @@
 import Button from "../../UI/Button/Button";
 import FruitControl from "./FruitControl/FruitControl";
+import VegetablesControl from "./VegetablesControl/VegetablesControl"
 import classes from "./Controls.module.css";
+import { useState } from "react";
+
+
 
 const Controls = ({
   ingredients,
   addIngredient,
   removeIngredient,
   startOrdering
+  
 }) => {
   const results = [];
   let total = 0;
@@ -14,18 +19,55 @@ const Controls = ({
     // Add ingredient number to totals number
     total += ingredients[ingredient];
     // Render pizza control for this ingredient
-    results.push(<FruitControl
-        key={ingredient}
-        add={addIngredient}
-        remove={removeIngredient}
-        count={ingredients[ingredient]}
-        type={ingredient} />)
+    results.push(choose2)
   }
+
+const[choose,setChoose] = useState("none")
+const[choose1,setChoose1] = useState("block")
+const[choose2,setChoose2] = useState()
+
+const fruits = {
+  display:choose
+}
+const choose0 = {
+  display:choose1
+}
 
   return (
     <div className={classes.Controls}>
-      <strong>Ingredients</strong>
-      {results}
+      
+      <div className={classes.categories}>
+        <input type="radio" id="fruit" name="categories"
+      onChange={(e)=>{
+        e.target.value = "Fruit"
+        setChoose("block")
+        setChoose1("none")
+        setChoose2(<FruitControl 
+          key={ingredient}
+          add={addIngredient}
+          remove={removeIngredient}
+          count={ingredients[ingredient]}
+          type={ingredient}/>)
+      }} /> 
+      <label for="fruit">Fruit</label>
+        <input type="radio" id="vegetables" name="categories"
+          onChange={(e)=>{
+          e.target.value = "Vegetables"
+          setChoose("block")
+          setChoose1("none")
+          setChoose2(<VegetablesControl 
+            key={ingredient}
+            add={addIngredient}
+            remove={removeIngredient}
+            count={ingredients[ingredient]}
+            type={ingredient}/>)
+        }} />
+        <label for="vegetables">Vegetables</label>
+      </div>
+     <br/>
+      
+      <div style={fruits}>Product{results}</div>
+      
       <Button disabled={!total} onClick={startOrdering}>Order</Button>
     </div>
   );

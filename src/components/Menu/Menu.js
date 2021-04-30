@@ -25,7 +25,7 @@ const Menu = ({ history }) => {
 
   function loadDefaults() {
     axios
-      .get('https://builder-a51d0-default-rtdb.firebaseio.com/default.json')
+      .get('https://builder-bb694-default-rtdb.firebaseio.com/default.json')
       .then(response => {
         setPrice(response.data.price);
 
@@ -62,12 +62,9 @@ const Menu = ({ history }) => {
 
   function finishOrdering() {
     axios
-      .post('https://builder-a51d0-default-rtdb.firebaseio.com/orders.json', {
+      .post('https://builder-bb694-default-rtdb.firebaseio.com/orders.json', {
         ingredients: ingredients,
-        price: price,
-        address: "1234 Jusaeva str",
-        phone: "0 777 777 777",
-        name: "Sadyr Japarov",
+        price: price
       })
       .then(() => {
         setOrdering(false);

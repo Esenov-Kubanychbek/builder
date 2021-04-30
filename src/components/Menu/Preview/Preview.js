@@ -1,6 +1,6 @@
-import ingredientsBackground from "../../../images/cheese.svg";
 import FruitIngredient from "../FruitIngredient/FruitIngredient";
 import classes from "./Preview.module.css";
+import korzina from "../../../images/korzina1.jpg"
 
 
 const Preview = ({ ingredients, price }) => {
@@ -14,11 +14,10 @@ const Preview = ({ ingredients, price }) => {
   return (
     <div className={classes.Preview}>
       <div className={classes.pizza}>
-        <div
-          className={classes.ingredients}
-          style={{ backgroundImage: `url(${ingredientsBackground})` }}>
+        <div  className={classes.corzina}>
+          <img className={classes.korzina} src={korzina}/>
           {result}
-        </div>
+         </div>
       </div>
       <div className={classes.price}>{price.toFixed(1)} som</div>
     </div>

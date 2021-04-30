@@ -1,21 +1,21 @@
 import classes from "./CheckoutSummary.module.css";
-import PizzaPreview from "../../Menu/Preview/Preview";
+import Preview from "../../Menu/Preview/Preview";
 import Button from "../../UI/Button/Button";
+import CheckoutForm from "./ChekoutForm/ChekoutForm";
 
-const CheckoutSummary = ({ cancelCallback }) => {
+const CheckoutSummary = ({ submitCallback, cancelCallback }) => {
   return (
     <div className={classes.CheckoutSummary}>
       <div>
-        <PizzaPreview ingredients={{
+        <Preview ingredients={{
           tomato: 5, 
           salami: 10,
           greenOlive: 50,
         }} price={150} />
       </div>
-      <div>
-        <Button>Checkout</Button>
-        <Button onClick={cancelCallback}>Cancel</Button>
-      </div>
+      <CheckoutForm
+        submitCallback={submitCallback}
+        cancelCallback={cancelCallback} />
     </div>
   );
 }

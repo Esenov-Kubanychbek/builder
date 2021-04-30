@@ -5,29 +5,34 @@
     margin-bottom: 1rem;
     justify-content: center;
   }
-  .pizza {
+   .pizza{
     width: 400px;
     height: 400px;
     margin-right: 1rem;
     margin-bottom: 1rem;
-    border-radius: 100%;
-    background-color: #fcc067;
   
     display: flex;
-    justify-content: center;
+    flex-wrap: wrap;
     align-items: center;
   }
-  .ingredients {
-    width: 380px;
-    height: 380px;
-    border-radius: 100%;
-    position: relative;
-  }
   .price {
-    background-color: tomato;
+    background-color: rgb(22, 127, 175);
     border-radius: 1rem;
     padding: 0 1rem;
     font-size: 1.5rem;
     color: white;
     font-weight: bold;
+  }
+  .corzina{
+    width: 200px;
+    height: 200px;
+    border: 1px solid black;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+  .korzina{
+    position: absolute;
+    width: 200px;
+    height: 200px;
   }
