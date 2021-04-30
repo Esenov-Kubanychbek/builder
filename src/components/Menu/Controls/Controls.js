@@ -27,7 +27,6 @@ const Controls = ({
   }
 
 const[choose,setChoose] = useState("none")
-const[choose1,setChoose1] = useState("block")
 
 const fruits = {
   display:choose
@@ -41,14 +40,12 @@ const fruits = {
       onChange={(e)=>{
         e.target.value = "Fruit"
         setChoose("block")
-        setChoose1("none")
       }} /> 
       <label for="fruit">Fruit</label>
         <input type="radio" id="vegetables" name="categories"
           onChange={(e)=>{
           e.target.value = "Vegetables"
           setChoose("block")
-          setChoose1("none")
         }} />
         <label for="vegetables">Vegetables</label>
       </div>
