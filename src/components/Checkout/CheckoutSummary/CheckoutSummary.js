@@ -1,6 +1,5 @@
 import classes from "./CheckoutSummary.module.css";
 import Preview from "../../Menu/Preview/Preview";
-import Button from "../../UI/Button/Button";
 import CheckoutForm from "./ChekoutForm/ChekoutForm";
 
 const CheckoutSummary = ({ submitCallback, cancelCallback }) => {

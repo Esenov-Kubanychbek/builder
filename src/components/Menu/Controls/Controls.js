@@ -1,6 +1,5 @@
 import Button from "../../UI/Button/Button";
 import FruitControl from "./FruitControl/FruitControl";
-import VegetablesControl from "./VegetablesControl/VegetablesControl"
 import classes from "./Controls.module.css";
 import { useState } from "react";
 
@@ -29,13 +28,9 @@ const Controls = ({
 
 const[choose,setChoose] = useState("none")
 const[choose1,setChoose1] = useState("block")
-const[choose2,setChoose2] = useState()
 
 const fruits = {
   display:choose
-}
-const choose0 = {
-  display:choose1
 }
 
   return (
@@ -47,7 +42,6 @@ const choose0 = {
         e.target.value = "Fruit"
         setChoose("block")
         setChoose1("none")
-        setChoose2()
       }} /> 
       <label for="fruit">Fruit</label>
         <input type="radio" id="vegetables" name="categories"
@@ -55,7 +49,6 @@ const choose0 = {
           e.target.value = "Vegetables"
           setChoose("block")
           setChoose1("none")
-          setChoose2()
         }} />
         <label for="vegetables">Vegetables</label>
       </div>
