@@ -19,7 +19,12 @@ const Controls = ({
     // Add ingredient number to totals number
     total += ingredients[ingredient];
     // Render pizza control for this ingredient
-    results.push(choose2)
+    results.push(<FruitControl 
+      key={ingredient}
+      add={addIngredient}
+      remove={removeIngredient}
+      count={ingredients[ingredient]}
+      type={ingredient}/>)
   }
 
 const[choose,setChoose] = useState("none")
@@ -42,12 +47,7 @@ const choose0 = {
         e.target.value = "Fruit"
         setChoose("block")
         setChoose1("none")
-        setChoose2(<FruitControl 
-          key={ingredient}
-          add={addIngredient}
-          remove={removeIngredient}
-          count={ingredients[ingredient]}
-          type={ingredient}/>)
+        setChoose2()
       }} /> 
       <label for="fruit">Fruit</label>
         <input type="radio" id="vegetables" name="categories"
@@ -55,12 +55,7 @@ const choose0 = {
           e.target.value = "Vegetables"
           setChoose("block")
           setChoose1("none")
-          setChoose2(<VegetablesControl 
-            key={ingredient}
-            add={addIngredient}
-            remove={removeIngredient}
-            count={ingredients[ingredient]}
-            type={ingredient}/>)
+          setChoose2()
         }} />
         <label for="vegetables">Vegetables</label>
       </div>
