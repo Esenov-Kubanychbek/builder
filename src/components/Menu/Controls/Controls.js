@@ -7,8 +7,6 @@ import { useState } from "react";
 
 const Controls = ({
   ingredients,
-  addIngredient,
-  removeIngredient,
   startOrdering
   
 }) => {
@@ -20,8 +18,6 @@ const Controls = ({
     // Render pizza control for this ingredient
     results.push(<FruitControl 
       key={ingredient}
-      add={addIngredient}
-      remove={removeIngredient}
       count={ingredients[ingredient]}
       type={ingredient}/>)
   }
