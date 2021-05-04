@@ -5,7 +5,9 @@ import {createStore} from "redux"
 import reportWebVitals from './reportWebVitals';
 import {BrowserRouter} from "react-router-dom"
 import { Provider } from 'react-redux';
+import builderReducer from './store/builderReducer';
 
+const store = createStore(builderReducer)
 
 ReactDOM.render(
     <React.StrictMode>
