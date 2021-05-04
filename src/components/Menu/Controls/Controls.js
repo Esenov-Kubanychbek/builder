@@ -26,32 +26,15 @@ const Controls = ({
       type={ingredient}/>)
   }
 
-const[choose,setChoose] = useState("none")
-
-const fruits = {
-  display:choose
-}
 
   return (
     <div className={classes.Controls}>
       
-      <div className={classes.categories}>
-        <input type="radio" id="fruit" name="categories"
-      onChange={(e)=>{
-        e.target.value = "Fruit"
-        setChoose("block")
-      }} /> 
-      <label for="fruit">Fruit</label>
-        <input type="radio" id="vegetables" name="categories"
-          onChange={(e)=>{
-          e.target.value = "Vegetables"
-          setChoose("block")
-        }} />
-        <label for="vegetables">Vegetables</label>
-      </div>
-     <br/>
-      
-      <div style={fruits}>Product{results}</div>
+     
+       
+        
+      <h3>Product</h3>
+   {results}
       
       <Button disabled={!total} onClick={startOrdering}>Order</Button>
     </div>

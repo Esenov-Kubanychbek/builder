@@ -15,7 +15,7 @@ const Preview = ({ ingredients, price }) => {
     <div className={classes.Preview}>
       <div className={classes.pizza}>
         <div  className={classes.corzina}>
-          <img alt="imagess" className={classes.korzina} src={korzina}/>
+          
           {result}
          </div>
       </div>
