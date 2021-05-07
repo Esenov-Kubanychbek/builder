@@ -1,6 +1,7 @@
 import FruitIngredient from "../FruitIngredient/FruitIngredient";
 import classes from "./Preview.module.css";
 import korzina from "../../../images/korzina1.jpg"
+import { useSelector } from "react-redux";
 
 
 const Preview = ({ ingredients, price }) => {

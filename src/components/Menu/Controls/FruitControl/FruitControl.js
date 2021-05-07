@@ -8,7 +8,7 @@ const dispatch = useDispatch();
 
   return (
     <div className={classes.FruitControl}>
-      <Button onClick={() => dispatch({type: "ADD_INGREDIENT",ingredient:type})}>+</Button>
+      <Button onClick={() => dispatch({ type: "ADD_INGREDIENT", ingredient: type })}>+</Button>
       <div className={classes.ingredient}>
         <FruitIngredient type={type} fixed />
       </div>

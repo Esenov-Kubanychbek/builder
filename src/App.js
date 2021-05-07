@@ -4,6 +4,7 @@ import Menu from "./components/Menu/Menu"
 import "./App.css";
 import { Route, Switch } from "react-router";
 import Checkout from "./components/Checkout/Checkout";
+import Orders from "./components/Orders/Orders";
 
 const App = () => {
   return (
@@ -12,6 +13,7 @@ const App = () => {
         <Switch>
           <Route path="/" component={Menu} exact/>
           <Route path="/checkout" component={Checkout}/>
+          <Orders path="/checkout" component={Checkout}/>
 
         </Switch>
       </Layout>
