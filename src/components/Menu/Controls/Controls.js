@@ -1,9 +1,6 @@
 import Button from "../../UI/Button/Button";
 import FruitControl from "./FruitControl/FruitControl";
 import classes from "./Controls.module.css";
-import { useState } from "react";
-
-
 
 const Controls = ({
   ingredients,

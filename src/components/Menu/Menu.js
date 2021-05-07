@@ -2,7 +2,7 @@ import Preview from "./Preview/Preview";
 import Controls from "./Controls/Controls";
 
 import classes from "./Menu.module.css";
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import axios from "axios";
 import Modal from "../UI/Modal/Modal";
 import OrderSummary from "./OrderSummary/OrderSummary";
@@ -10,14 +10,6 @@ import Button from "../UI/Button/Button";
 import { useSelector } from "react-redux";
 
 const Menu = ({ history }) => {
-  const prices = {
-    bread: 3.5,
-    oil: 4,
-    grusha: .3,
-    egg: .3,
-    orange: 2,
-    vinograde: 1,
-  }
   const ingredients = useSelector(state => state.ingredients)
   const price = useSelector(state => state.price)
 
