@@ -5,7 +5,7 @@ const initialState = {
       grusha: 10,
       egg: 10,
       orange: 10,
-      vinograde: 10,
+      vinograd: 10,
     },
     price: 200,
   };
@@ -15,7 +15,7 @@ const initialState = {
     grusha: .3,
     egg: .3,
     orange: 2,
-    vinograde: 1,
+    vinograd: 1,
   };
   
   const builderReducer = (state = initialState, action) => {
