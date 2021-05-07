@@ -19,6 +19,39 @@ const FruitIngredient = ({ type, fixed }) => {
   };
 
 
+
+  function getPosition(ingredientWidth) {
+    const fixingDiameter = 360;
+    const fixingRadius = fixingDiameter / 2;
+    const ingredientRadius = parseInt(ingredientWidth) / 2;
+
+    const ingredientTop = Math.round(Math.random() * fixingDiameter);
+    const ingredientLeft = Math.round(Math.random() * fixingDiameter);
+
+    const distance = Math.sqrt(
+      Math.pow(ingredientTop - fixingRadius, 2) + Math.pow(ingredientLeft - fixingRadius, 2)
+    ) + ingredientRadius;
+
+    return distance < fixingRadius
+      ? {
+        top: ingredientTop - ingredientRadius,
+        left: ingredientLeft - ingredientRadius
+      }
+      : getPosition(ingredientWidth);
+  }
+
+  // Get random position for this ingredient.
+  if (!fixed) {
+    console.log(types)
+    console.log(type)
+    const position = getPosition(types[type].width);
+    types[type].top = position.top + "px";
+    types[type].left = position.left + "px";
+  }
+  // Get random rotation for this ingredient.
+  types[type].transform = `rotate(${Math.round(Math.random() * 360)}deg)`;
+
+
   return (
     <div className={classes.FruitIngredient} style={types[type]}></div>
   );
