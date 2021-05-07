@@ -6,9 +6,9 @@ import { BrowserRouter } from 'react-router-dom';
 import {createStore} from 'redux';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
-import AnimalReducer from './components/store/builderReducer';
+import BuilderlReducer from './store/builderReducer';
 
- const store = createStore(AnimalReducer);
+ const store = createStore(BuilderlReducer);
 ReactDOM.render(
   <React.StrictMode>
    <Provider store={store}>
