@@ -9,11 +9,17 @@ const Orders = () => {
   useEffect(() => {
     axios.get('https://builder-bb694-default-rtdb.firebaseio.com/orders.json')
       .then(response => {
-        setOrders(Object.values(response.data));
+        const newOrders = Object.keys(response.data).map(id => {
+          return {
+            ...response.data[id],
+            id: id,
+          };
+        });
+        setOrders(newOrders);
       });
   }, []);
 
-  const results =  orders.map(order => <Order {...order} />);
+  const results = orders.map(order => <Order key={order.id} {...order} />);
 
   return (
     <div className={classes.Orders}>

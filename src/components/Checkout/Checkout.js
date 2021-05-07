@@ -1,5 +1,6 @@
-import PizzaPreview from "../Menu/Preview/Preview";
-import CheckoutForm from "./CheckoutSummary/ChekoutForm/ChekoutForm";
+  
+import Preview from "../Menu/Preview/Preview";
+import CheckoutForm from "./CheckoutForm/CheckoutForm";
 import classes from "./Checkout.module.css";
 import axios from "axios";
 import { useSelector } from "react-redux";
@@ -31,7 +32,7 @@ const Checkout = ({ history }) => {
 
   return (
     <div className={classes.Checkout}>
-      <PizzaPreview ingredients={ingredients} price={price} />
+      <Preview ingredients={ingredients} price={price} />
       <CheckoutForm
         cancelCallback={cancelCallback}
         submitCallback={submitCallback} />

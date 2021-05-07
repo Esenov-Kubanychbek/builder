@@ -1,41 +1,41 @@
 const initialState = {
-    ingredients:{
-        tomato:10,
-        salami:10,
-        redPeper:10,
-        yellowPeper:10,
-        greenOlive:10,
-        blackOlive:10
+    ingredients: {
+      bread: 10,
+      oil: 10,
+      grusha: 10,
+      egg: 10,
+      orange: 10,
+      vinograde: 10,
     },
-    price:0
-}
-const prices = {
-    tomato: 3.5,
-    salami: 4,
-    greenOlive: .3,
-    blackOlive: .3,
-    redPepper: 2,
-    yellowPepper: 1,
-  }
-
-const builderReducer = (state = initialState,action) => {
-const newState = {...state}
-
+    price: 200,
+  };
+  const prices = {
+    bread: 3.5,
+    oil: 4,
+    grusha: .3,
+    egg: .3,
+    orange: 2,
+    vinograde: 1,
+  };
+  
+  const builderReducer = (state = initialState, action) => {
+    const newState = { ...state };
+  
     switch (action.type) {
-        case "ADD_INGREDIENT":
-            newState.ingredients[action.ingredient]++;
-            newState.price += prices[action.ingredient]
-
-            break;
-        case "REMOVE_INGREDIENT":
-            newState.ingredients[action.ingredient]--;
-            newState.price -= prices[action.ingredient]
-            break;
+      case "ADD_INGREDIENT":
+        newState.ingredients[action.ingredient]++;
+        newState.price += prices[action.ingredient];
+        break;
+      case "REMOVE_INGREDIENT":
+        newState.ingredients[action.ingredient]--;
+        newState.price -= prices[action.ingredient];
+        break;
     
-        default:
-            break;
+      default:
+        break;
     }
+  
     return newState;
-}
- 
-export default builderReducer;
+  }
+  
+  export default builderReducer;

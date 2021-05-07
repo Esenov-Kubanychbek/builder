@@ -1,7 +1,6 @@
 import FruitIngredient from "../FruitIngredient/FruitIngredient";
 import classes from "./Preview.module.css";
-import korzina from "../../../images/korzina1.jpg"
-import { useSelector } from "react-redux";
+import korzina from "../../../images/korzina1 (2).png"
 
 
 const Preview = ({ ingredients, price }) => {
@@ -16,7 +15,7 @@ const Preview = ({ ingredients, price }) => {
     <div className={classes.Preview}>
       <div className={classes.pizza}>
         <div  className={classes.corzina}>
-          
+          <img src={korzina} alt="imgess"/>
           {result}
          </div>
       </div>

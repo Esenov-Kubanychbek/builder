@@ -10,7 +10,14 @@ import Button from "../UI/Button/Button";
 import { useSelector } from "react-redux";
 
 const Menu = ({ history }) => {
-  
+  const prices = {
+    bread: 3.5,
+    oil: 4,
+    grusha: .3,
+    egg: .3,
+    orange: 2,
+    vinograde: 1,
+  }
   const ingredients = useSelector(state => state.ingredients)
   const price = useSelector(state => state.price)
 
@@ -41,9 +48,16 @@ const Menu = ({ history }) => {
   }
 
   function finishOrdering() {
-    setOrdering(false);
-    // loadDefaults();
-    history.push('/checkout');
+    axios
+      .post('https://builder-bb694-default-rtdb.firebaseio.com/orders.json', {
+        ingredients: ingredients,
+        price: price
+      })
+      .then(() => {
+        setOrdering(false);
+        // loadDefaults();
+        history.push('/checkout');
+      });
   }
 
   return (

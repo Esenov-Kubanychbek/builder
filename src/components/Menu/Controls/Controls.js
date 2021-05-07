@@ -29,7 +29,7 @@ const Controls = ({
      
        
         
-      <h3>Product</h3>
+      <h2>Product</h2>
    {results}
       
       <Button disabled={!total} onClick={startOrdering}>Order</Button>
