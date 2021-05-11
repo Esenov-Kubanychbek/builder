@@ -1,21 +1,21 @@
 import { useDispatch } from "react-redux";
-import Button from "../../../UI/Button/Button";
-import FruitIngredient from "../../FruitIngredient/FruitIngredient";
-import classes from "./FruitControl.module.css";
 import { add, remove } from "../../../../store/actions/builder";
+import Button from "../../../UI/Button/Button";
+import Product from "../../Product/Product";
+import classes from "./Control.module.css";
 
-const FruitControl = ({ type, count }) => {
+const Control = ({ type, count }) => {
   const dispatch = useDispatch();
 
   return (
-    <div className={classes.FruitControl}>
+    <div className={classes.Control}>
       <Button onClick={() => dispatch(add(type))}>+</Button>
       <div className={classes.ingredient}>
-        <FruitIngredient type={type} fixed />
+        <Product type={type} fixed />
       </div>
       <Button onClick={() => dispatch(remove(type))} disabled={!count}>-</Button>
     </div>
   );
 }
 
-export default FruitControl;
+export default Control;

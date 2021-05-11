@@ -1,11 +1,10 @@
 import Button from "../../UI/Button/Button";
-import FruitControl from "./FruitControl/FruitControl";
+import Control from "./Control/Control";
 import classes from "./Controls.module.css";
 
 const Controls = ({
   ingredients,
   startOrdering
-  
 }) => {
   const results = [];
   let total = 0;
@@ -13,22 +12,16 @@ const Controls = ({
     // Add ingredient number to totals number
     total += ingredients[ingredient];
     // Render pizza control for this ingredient
-    results.push(<FruitControl 
-      key={ingredient}
-      count={ingredients[ingredient]}
-      type={ingredient}/>)
+    results.push(<Control
+        key={ingredient}
+        count={ingredients[ingredient]}
+        type={ingredient} />)
   }
-
 
   return (
     <div className={classes.Controls}>
-      
-     
-       
-        
-      <h2>Product</h2>
-        {results}
-      
+      <strong>Ingredients</strong>
+      {results}
       <Button disabled={!total} onClick={startOrdering}>Order</Button>
     </div>
   );

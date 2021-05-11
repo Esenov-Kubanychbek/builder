@@ -1,6 +1,5 @@
 import Button from "../../UI/Button/Button"
 import classes from "./CheckoutForm.module.css"
-import withAxios from "../withAxios";
 
 const CheckoutForm = ({ cancelCallback, submitCallback }) => {
   return (
@@ -23,4 +22,4 @@ const CheckoutForm = ({ cancelCallback, submitCallback }) => {
   );
 }
  
-export default withAxios(Checkout, axios); 
+export default CheckoutForm;

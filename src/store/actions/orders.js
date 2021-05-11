@@ -10,4 +10,4 @@ export const load = () => {
   return (dispatch) => axios
     .get('/orders.json')
     .then(response => dispatch(set(response.data)));
-} 
+}

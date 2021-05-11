@@ -21,4 +21,4 @@ const Orders = () => {
   );
 }
 
-export default withAxios(Orders, axios); 
+export default withAxios(Orders, axios);

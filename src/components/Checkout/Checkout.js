@@ -1,10 +1,9 @@
-  
 import Preview from "../Menu/Preview/Preview";
 import CheckoutForm from "./CheckoutForm/CheckoutForm";
 import classes from "./Checkout.module.css";
 import axios from "../../axios";
 import { useSelector } from "react-redux";
-
+import withAxios from "../withAxios";
 
 const Checkout = ({ history }) => {
   const ingredients = useSelector(state => state.builder.ingredients);
@@ -40,4 +39,4 @@ const Checkout = ({ history }) => {
   );
 }
  
-export default Checkout;
+export default withAxios(Checkout, axios);

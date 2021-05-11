@@ -9,7 +9,7 @@ export const add = (ingredient) => ({
 export const remove = (ingredient) => ({
   type: REMOVE_INGREDIENT,
   ingredient: ingredient
-}); 
+});
 
 export const set = (data) => ({
   type: SET_INGREDIENTS,
@@ -18,6 +18,6 @@ export const set = (data) => ({
 
 export const load = () => {
   return (dispatch) => axios
-  .get('/default.json')
+    .get('/default.json')
     .then(response => dispatch(set(response.data)));
-} 
+}
