@@ -1,3 +1,6 @@
+import { ADD_INGREDIENT, REMOVE_INGREDIENT } from "../actions/types";
+
+
 const initialState = {
     ingredients: {
       bread: 10,
@@ -22,11 +25,11 @@ const initialState = {
     const newState = { ...state };
   
     switch (action.type) {
-      case "ADD_INGREDIENT":
+      case ADD_INGREDIENT:
         newState.ingredients[action.ingredient]++;
         newState.price += prices[action.ingredient];
         break;
-      case "REMOVE_INGREDIENT":
+        case REMOVE_INGREDIENT:
         newState.ingredients[action.ingredient]--;
         newState.price -= prices[action.ingredient];
         break;
