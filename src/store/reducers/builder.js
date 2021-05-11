@@ -1,16 +1,11 @@
-import { ADD_INGREDIENT, REMOVE_INGREDIENT } from "../actions/types";
+import { ADD_INGREDIENT, REMOVE_INGREDIENT, SET_INGREDIENTS } from "../actions/types";
 
 
 const initialState = {
     ingredients: {
-      bread: 10,
-      oil: 10,
-      grusha: 10,
-      egg: 10,
-      orange: 10,
-      vinograd: 10,
+      
     },
-    price: 200,
+    price: 0,
   };
   const prices = {
     bread: 3.5,

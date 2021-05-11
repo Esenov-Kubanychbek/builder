@@ -1,16 +1,20 @@
 import Preview from "./Preview/Preview";
 import Controls from "./Controls/Controls";
+import withAxios from "../withAxios";
+import axios from "../../axios";
+
 import {  useState } from "react";
 import OrderSummary from "./OrderSummary/OrderSummary";
 import Modal from "../UI/Modal/Modal";
 import Button from"../UI/Button/Button";
 
 import classes from "./Menu.module.css";
-import { useSelector } from "react-redux";
+import { useDispatch, useSelector } from "react-redux";
+import { load } from "../../store/actions/builder";
 
 const Menu = ({history}) => {
   
-
+  const dispatch = useDispatch();
 
 
   const ingredients = useSelector(state => state.builder.ingredients);
@@ -19,18 +23,8 @@ const Menu = ({history}) => {
 
 
 
-  // const [canBuy, setCanBuy] = useState(true);
 
-
-  
-
-  // function checkCanBuy(newSatellites) {
-  //   const totalSatellites = Object.values(newSatellites)
-  //     .reduce((total, current) => total + current);
-  //   setCanBuy(totalSatellites > 0);
-  // }
-
-
+  useEffect(() => dispatch(load()), [dispatch]);
   
 
   function startOrdering() {
@@ -79,4 +73,4 @@ const Menu = ({history}) => {
   );
 }
 
-export default Menu;
+export default withAxios(Menu, axios); 
