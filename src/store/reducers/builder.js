@@ -18,7 +18,7 @@ const initialState = {
     vinograd: 1,
   };
   
-  const builderReducer = (state = initialState, action) => {
+  const builder= (state = initialState, action) => {
     const newState = { ...state };
   
     switch (action.type) {
@@ -38,4 +38,4 @@ const initialState = {
     return newState;
   }
   
-  export default builderReducer;
+  export default builder;
