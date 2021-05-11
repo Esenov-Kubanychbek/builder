@@ -42,8 +42,6 @@ const FruitIngredient = ({ type, fixed }) => {
 
   // Get random position for this ingredient.
   if (!fixed) {
-    console.log(types)
-    console.log(type)
     const position = getPosition(types[type].width);
     types[type].top = position.top + "px";
     types[type].left = position.left + "px";

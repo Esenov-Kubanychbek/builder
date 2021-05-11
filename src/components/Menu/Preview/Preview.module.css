@@ -5,12 +5,12 @@
     margin-bottom: 1rem;
     justify-content: center;
   }
-   .pizza{
+   .menus{
     width: 400px;
     height: 400px;
     margin-right: 1rem;
     margin-bottom: 1rem;
-  
+    justify-content: center;
     display: flex;
     flex-wrap: wrap;
     align-items: center;
@@ -23,16 +23,6 @@
     color: white;
     font-weight: bold;
   }
-  .corzina{
-    width: 240px;
-    height: 300px;
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-  }
-  .corzina img{
-    position: absolute;
-    width: 240px;
-    height: 300px;
-    z-index: -1;
+  .result{
+    margin-top: -20px;
   }
