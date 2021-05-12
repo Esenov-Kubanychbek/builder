@@ -2,17 +2,22 @@ import { ADD_INGREDIENT, REMOVE_INGREDIENT, SET_INGREDIENTS } from "../actions/t
 
 const initialState = {
   ingredients: {
-   
+   bread: 35,
+  oil: 4,
+  grusha: 3,
+  egg: 3,
+  orange: 2,
+  vinograd: 1,
   },
   price: 0,
 };
 const prices = {
-  bread: 3.5,
-  oil: 4,
-  grusha: .3,
-  egg: .3,
-  orange: 2,
-  vinograd: 1,
+  bread: 35,
+  oil: 40,
+  grusha: 33,
+  egg: 34,
+  orange: 25,
+  vinograd: 16,
 };
 
 const builder = (state = initialState, action) => {
