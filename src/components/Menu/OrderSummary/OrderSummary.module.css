@@ -1,0 +1,12 @@
+.OrderSummary ul{
+ list-style-type: none;
+}
+.OrderSummary {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin-bottom: 20px;
+}
+.OrderSummary h2{
+    margin: 15px 0 -5px 0;
+}

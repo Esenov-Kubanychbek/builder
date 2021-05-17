@@ -3,7 +3,7 @@ import classes from "./OrderSummary.module.css";
 const OrderSummary = ({ ingredients, price }) => {
   const labels = {
     bread: "Bread",
-    edd: "Egg",
+    egg: "Egg",
     oil: "Oil",
     grusha: "Grusha",
     orange: "Orange",
@@ -14,7 +14,7 @@ const OrderSummary = ({ ingredients, price }) => {
 
   return (
     <div className={classes.OrderSummary}>
-      <h3>Order summary</h3>
+      <h2>Order summary</h2>
       <ul>
         {results}
       </ul>

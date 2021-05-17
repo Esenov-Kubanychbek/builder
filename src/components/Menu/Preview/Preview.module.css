@@ -5,7 +5,7 @@
   margin-bottom: 1rem;
   justify-content: center;
 }
-.pizza {
+.menus {
   width: 400px;
   height: 400px;
   margin-right: 1rem;
@@ -16,11 +16,12 @@
   align-items: center;
 }
 .korzina {
-  width: 150px;
-  height: 220px;
+  width: 170px;
+  height: 255px;
   position: relative;
   background-size: cover;
   background-position: center;
+  transform: scale(1.2);
 }
 .price {
   background-color:  rgb(17, 200, 224);
@@ -29,4 +30,9 @@
   font-size: 1.5rem;
   color: white;
   font-weight: bold;
+  
+  border: 3px solid rgba(7, 142, 160, 0.329)
+}
+.kor{
+  padding: 20px;
 }

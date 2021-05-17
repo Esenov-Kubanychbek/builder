@@ -13,12 +13,13 @@ const Preview = ({ ingredients, price }) => {
 
   return (
     <div className={classes.Preview}>
-      <div className={classes.pizza}>
+      <div className={classes.menus}>
         <div
           className={classes.korzina}
           style={{ backgroundImage: `url(${ingredientsBackground})` }}>
-          {result}
+            {result}
         </div>
+        
       </div>
       <div className={classes.price}>{price.toFixed(1)} som</div>
     </div>

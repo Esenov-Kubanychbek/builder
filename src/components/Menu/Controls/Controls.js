@@ -20,7 +20,7 @@ const Controls = ({
 
   return (
     <div className={classes.Controls}>
-      <strong>Product</strong>
+     <h2>Product</h2> 
       {results}
       <Button disabled={!total} onClick={startOrdering}>Order</Button>
     </div>

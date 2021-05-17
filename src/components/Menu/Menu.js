@@ -40,17 +40,23 @@ const Menu = ({ history }) => {
       <Controls
         ingredients={ingredients}
         startOrdering={startOrdering}
-        />
+      />
       <Modal
         show={ordering}
         cancel={stopOrdering}>
+        <div className={classes.orderSummary}>
           <OrderSummary
             ingredients={ingredients}
             price={price}
-            />
-          <Button onClick={finishOrdering} green="green">Checkout</Button>
-          <Button onClick={stopOrdering}>Cancel</Button>
-        </Modal>
+          />
+          <div className={classes.button}>
+            <Button onClick={finishOrdering} green="green">Checkout</Button>
+            <Button onClick={stopOrdering}>Cancel</Button>
+          </div>
+
+        </div>
+
+      </Modal>
     </div>
   );
 }

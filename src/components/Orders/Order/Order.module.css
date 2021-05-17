@@ -1,0 +1,28 @@
+.Order{
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    border: 3px solid  rgb(17, 200, 224);
+    max-width:600px ;
+    min-width: 300px;
+    margin: 10px;
+    padding: 40px;
+    border-radius: 20px;
+    background-color:  rgba(0, 0, 0, 0.698);
+    color: white;
+    border: 5px solid rgba(17, 200, 224, 0.397);
+    box-shadow: 0 0 15px black;
+    
+}
+.Order span{
+    font-weight: bold;
+    font-size: 23px;
+}
+.Order li{
+    font-size: 22px;
+}
+.Order li:nth-child(4){
+    display: flex;
+   flex-direction: column; 
+}

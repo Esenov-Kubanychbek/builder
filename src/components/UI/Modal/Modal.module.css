@@ -3,11 +3,15 @@
   top: 15%;
   left: 30%;
   z-index: 1;
-  width: 40%;
+  width: 35%;
   background-color: white;
   padding: 1rem;
   box-shadow: 0 0 10px rgba(0, 0, 0, .5);
-  transition: transform .3s ease-out;
+  transition: transform .6s ease-out;
+  border-radius: 30px;
+  background-color: rgba(0, 0, 0, .7);
+  border: 5px solid rgb(17, 200, 224);
+  color: rgb(17, 200, 224);
 }
 
 @media (max-width: 800px) {
