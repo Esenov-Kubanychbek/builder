@@ -16,12 +16,15 @@
   align-items: center;
 }
 .korzina {
-  width: 170px;
-  height: 255px;
+  width: 160px;
+  height: 238px;
   position: relative;
   background-size: cover;
   background-position: center;
-  transform: scale(1.2);
+  transform: scale(1.1);
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .price {
   background-color:  rgb(17, 200, 224);

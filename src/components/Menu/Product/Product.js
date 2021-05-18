@@ -19,8 +19,8 @@ const Product = ({ type, fixed }) => {
   };
 
   function getPosition(ingredientWidth) {
-    const pizzaDiameter = 235;
-    const pizzaRadius = pizzaDiameter / 3;
+    const pizzaDiameter = 225;
+    const pizzaRadius = pizzaDiameter / 2.8;
     const ingredientRadius = parseInt(ingredientWidth) / 2;
 
     const ingredientTop = Math.round(Math.random() * pizzaDiameter);

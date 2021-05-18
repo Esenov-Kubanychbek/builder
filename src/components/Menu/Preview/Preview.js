@@ -17,7 +17,9 @@ const Preview = ({ ingredients, price }) => {
         <div
           className={classes.korzina}
           style={{ backgroundImage: `url(${ingredientsBackground})` }}>
+            <div className={classes.product}>
             {result}
+            </div>
         </div>
         
       </div>

@@ -3,16 +3,15 @@
     display: flex;
     flex-direction: column;
     text-align: center;
-    border: 3px solid  rgb(17, 200, 224);
     max-width:600px ;
     min-width: 300px;
     margin: 10px;
     padding: 40px;
     border-radius: 20px;
-    background-color:  rgba(0, 0, 0, 0.698);
+    background-color:  rgba(0, 0, 0, 0.7);
     color: white;
-    border: 5px solid rgba(17, 200, 224, 0.397);
-    box-shadow: 0 0 15px black;
+    border: 5px solid rgba(17, 200, 224, 0.637);
+    box-shadow: 0 10px 15px rgba(17, 200, 224, 0.637);
     
 }
 .Order span{
