@@ -17,7 +17,7 @@ const Control = ({ type, count }) => {
   return (
     <div className={classes.Control}>
       <Button onClick={() => dispatch(add(type))}>+</Button>
-      <div className={classes.ingredient}>
+      <div className={classes.product}>
 
         {names[type]}
       </div>

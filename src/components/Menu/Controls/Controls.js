@@ -3,19 +3,19 @@ import Control from "./Control/Control";
 import classes from "./Controls.module.css";
 
 const Controls = ({
-  ingredients,
+  products,
   startOrdering
 }) => {
   const results = [];
   let total = 0;
-  for (const ingredient in ingredients) {
-    // Add ingredient number to totals number
-    total += ingredients[ingredient];
+  for (const product in products) {
+    // Add product number to totals number
+    total += products[product];
     // Render pizza control for this ingredient
     results.push(<Control
-        key={ingredient}
-        count={ingredients[ingredient]}
-        type={ingredient} />)
+        key={product}
+        count={products[product]}
+        type={product} />)
   }
 
   return (

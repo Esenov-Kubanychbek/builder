@@ -6,7 +6,7 @@ import { useSelector } from "react-redux";
 import withAxios from "../withAxios";
 
 const Checkout = ({ history }) => {
-  const ingredients = useSelector(state => state.builder.ingredients);
+  const products = useSelector(state => state.builder.products);
   const price = useSelector(state => state.builder.price);
 
   function cancelCallback() {
@@ -20,7 +20,7 @@ const Checkout = ({ history }) => {
       name: data.get('name'),
       address: data.get('address'),
       phone: data.get('phone'),
-      ingredients: ingredients,
+      products: products,
       price: price,
     }).then(response => {
       history.replace('/');
@@ -28,10 +28,10 @@ const Checkout = ({ history }) => {
 
     event.preventDefault();
   }
-
+  
   return (
     <div className={classes.Checkout}>
-      <Preview ingredients={ingredients} price={price} />
+      <Preview products={products} price={price} />
       <CheckoutForm
         cancelCallback={cancelCallback}
         submitCallback={submitCallback} />

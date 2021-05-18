@@ -12,7 +12,7 @@ import { load } from "../../store/actions/builder";
 
 const Menu = ({ history }) => {
   const dispatch = useDispatch();
-  const ingredients = useSelector(state => state.builder.ingredients);
+  const products = useSelector(state => state.builder.products);
   const price = useSelector(state => state.builder.price);
   const [ordering, setOrdering] = useState(false);
 
@@ -35,10 +35,10 @@ const Menu = ({ history }) => {
   return (
     <div className={classes.Menu}>
       <Preview
-        ingredients={ingredients}
+        products={products}
         price={price} />
       <Controls
-        ingredients={ingredients}
+        products={products}
         startOrdering={startOrdering}
       />
       <Modal
@@ -46,7 +46,7 @@ const Menu = ({ history }) => {
         cancel={stopOrdering}>
         <div className={classes.orderSummary}>
           <OrderSummary
-            ingredients={ingredients}
+            products={products}
             price={price}
           />
           <div className={classes.button}>

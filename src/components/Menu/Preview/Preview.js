@@ -3,11 +3,11 @@ import Product from "../Product/Product";
 import classes from "./Preview.module.css";
 import ingredientsBackground from "../../../images/korzina1.png";
 
-const Preview = ({ ingredients, price }) => {
+const Preview = ({ products, price }) => {
   const result = [];
-  for (const ingredient in ingredients) {
-    for (let i = 0; i < ingredients[ingredient]; i++) {
-      result.push(<Product key={ingredient + i} type={ingredient} />)
+  for (const product in products) {
+    for (let i = 0; i < products[product]; i++) {
+      result.push(<Product key={product + i} type={product} />)
     }
   }
 
