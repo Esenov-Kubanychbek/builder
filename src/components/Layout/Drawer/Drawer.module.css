@@ -10,6 +10,7 @@
   background-color: rgb(17, 200, 224);
   box-shadow: 0 0 10px rgba(0, 0, 0, .6);
   transition: transform .3s ease-out;
+  border-right: 5px solid white;
 }
 
 .open {
