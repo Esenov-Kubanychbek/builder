@@ -16,7 +16,7 @@ const Preview = ({ products, price }) => {
       <div className={classes.menus}>
         <div
           className={classes.korzina}
-          style={{ backgroundImage: `url(${ingredientsBackground})` }}>
+          style={{ backgroundImage: `url(${ingredientsBackground})`, transform:"scale(1.3)" }}>
             <div className={classes.product}>
             {result}
             </div>

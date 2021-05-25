@@ -24,4 +24,12 @@
   .Drawer  {
     display: none;
   }
+
+}
+@media (max-width: 550px) {
+  .Drawer  {
+    display: flex;
+    flex-direction: column;
+  }
+  
 }

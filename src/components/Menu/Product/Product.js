@@ -10,7 +10,7 @@ import vinograd from "../../../images/fruit/vino.svg";
 
 const Product = ({ type, fixed }) => {
   const types = {
-    bread: { backgroundImage: `url(${bread})`, width: "35px", height: "35px" },
+    bread: { backgroundImage: `url(${bread})`, width: "45px", height: "45px" },
     egg: { backgroundImage: `url(${egg})`, width: "25px", height: "25px" },
     oil: { backgroundImage: `url(${oil})`, width: "30px", height: "30px" },
     grusha: { backgroundImage: `url(${grusha})`, width: "50px", height: "40px" },

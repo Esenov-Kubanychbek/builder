@@ -6,6 +6,7 @@ const Order = ({ name, phone, address, products, price }) => {
       <strong> {label}:</strong> -
       {products[label]}
     </em>)
+
   return (
     <ul className={classes.Order}>
       <li><span>Name:</span> {name}</li>
@@ -14,6 +15,7 @@ const Order = ({ name, phone, address, products, price }) => {
       <li><span>Your satellites:</span>  {output}</li>
       <li><span>Price:</span> {price}</li>
     </ul>
+    
   );
 }
 
