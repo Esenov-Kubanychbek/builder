@@ -14,7 +14,7 @@
   border-bottom: 3px solid rgb(255, 255, 255);
 }
 
-@media (max-width: 549px) {
+@media (max-width: 679px) {
   .Toolbar nav {
     display: none;
   }
