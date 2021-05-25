@@ -16,8 +16,8 @@
   align-items: center;
 }
 .korzina {
-  width: 160px;
-  height: 238px;
+  width: 180px;
+  height: 268px;
   position: relative;
   background-size: cover;
   background-position: center;
@@ -25,7 +25,9 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  padding: 20px;
 }
+
 .price {
   background-color:  rgb(17, 200, 224);
   border-radius: 1rem;
@@ -36,6 +38,8 @@
   
   border: 3px solid rgba(7, 142, 160, 0.329)
 }
-.kor{
+.product{
   padding: 20px;
+  margin-right: -10px;
+  margin-bottom: -10px;
 }
