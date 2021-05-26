@@ -1,0 +1,42 @@
+body{
+    background-color: rgb(240, 238, 238);
+}
+.Auth{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto  ;
+    max-width: 450px;
+    text-align: center;
+    border: 1px solid rgb(170, 168, 168);;
+    padding: 20px;
+    background-color: white;
+    height: 300px;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.356);
+    margin-top: 70px;
+}
+.Auth h1{
+    
+}
+.Auth form{
+    display: flex;
+    flex-direction: column;
+    max-width: 250px;
+}
+.Auth form input{
+    margin: 5px 0;
+    border: 1px solid rgb(180, 176, 176);
+    width: 250px;
+    height: 30px;
+}
+.Auth form button{
+    margin: 5px 0;
+    border: 1px solid rgb(180, 176, 176);
+    width: 170px;
+    margin: 3px 3px;
+}
+.Auth form div{
+    max-width: 350px;
+    display: flex;
+}

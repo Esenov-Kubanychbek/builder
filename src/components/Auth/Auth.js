@@ -36,8 +36,11 @@ const Auth = () => {
       <form onSubmit={submitCallback}>
         <input type="email" name="email" placeholder="Email" required />
         <input type="password" name="password" placeholder="Password" required />
-        <button onClick={() => setMethod("signin")} disabled={loading}>Sign in</button>
+        <div>
+          <button onClick={() => setMethod("signin")} disabled={loading}>Sign in</button>
         <button onClick={() => setMethod("signup")} disabled={loading}>Sign up</button>
+        </div>
+        
       </form>
       {redirectOutput}
     </div>
