@@ -35,9 +35,10 @@ body{
     border: 1px solid rgb(180, 176, 176);
     width: 170px;
     margin: 3px 3px;
+    background-color: blue;
 }
 .Auth form div{
     max-width: 350px;
     display: flex;
-    background-color: blue;
+    
 }
