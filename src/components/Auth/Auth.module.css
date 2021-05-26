@@ -29,6 +29,7 @@ body{
     border: 1px solid rgb(180, 176, 176);
     width: 250px;
     height: 30px;
+    padding: 8px;
 }
 .Auth form button{
     margin: 5px 0;
