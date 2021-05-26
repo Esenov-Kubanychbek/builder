@@ -17,7 +17,7 @@ body{
     margin-top: 70px;
 }
 .Auth h1{
-    
+    margin-top: -20px;
 }
 .Auth form{
     display: flex;
@@ -39,4 +39,5 @@ body{
 .Auth form div{
     max-width: 350px;
     display: flex;
+    background-color: blue;
 }
