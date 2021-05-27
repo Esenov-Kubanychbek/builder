@@ -39,6 +39,7 @@
   border: 3px solid rgba(7, 142, 160, 0.329)
 }
 .product{
+  padding-top: 20px;
   margin-right: -15px;
-  margin-bottom: -15px;
+  position: absolute;
 }

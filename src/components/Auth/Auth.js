@@ -32,7 +32,10 @@ const Auth = () => {
   return (
     <div className={classes.Auth}>
       <h1>Welcome</h1>
-      {errorOutput}
+      <div className={classes.error}>
+        {errorOutput}
+      </div>
+      
       <form onSubmit={submitCallback}>
         <input type="email" name="email" placeholder="Email" required />
         <input type="password" name="password" placeholder="Password" required />
