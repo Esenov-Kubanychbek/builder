@@ -4,7 +4,7 @@ const OrderSummary = ({ products, price }) => {
   const labels = {
     bread: "Bread",
     egg: "Egg",
-    oil: "Oil",
+    oil: "Milk",
     grusha: "Grusha",
     orange: "Orange",
     vinograd: "Vinograde",
