@@ -9,7 +9,7 @@ const Control = ({ type, count }) => {
   const names = {
     bread:"Bread",
     egg: "Egg",
-    oil: "Oil",
+    oil: "Milk",
     grusha: "Pear",
     orange: "Orange",
     vinograd: "Grapes"
