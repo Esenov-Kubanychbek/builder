@@ -3,7 +3,7 @@ import React from "react";
 import classes from "./Product.module.css";
 import bread from "../../../images/bread.svg";
 import egg from "../../../images/egg.svg";
-import oil from "../../../images/oil.svg";
+import oil from "../../../images/milk.svg";
 import grusha from "../../../images/fruit/grusha.svg";
 import orange from "../../../images/fruit/orange.svg";
 import vinograd from "../../../images/fruit/vino.svg";
@@ -12,7 +12,7 @@ const Product = ({ type, fixed }) => {
   const types = {
     bread: { backgroundImage: `url(${bread})`, width: "45px", height: "45px" },
     egg: { backgroundImage: `url(${egg})`, width: "25px", height: "25px" },
-    oil: { backgroundImage: `url(${oil})`, width: "30px", height: "30px" },
+    oil: { backgroundImage: `url(${oil})`, width: "40px", height: "40px" },
     grusha: { backgroundImage: `url(${grusha})`, width: "50px", height: "40px" },
     orange: { backgroundImage: `url(${orange})`, width: "20px", height: "20px" },
     vinograd: { backgroundImage: `url(${vinograd})`, width: "40px", height: "40px" },
