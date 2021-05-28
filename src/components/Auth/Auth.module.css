@@ -18,7 +18,7 @@ body{
 }
 .Auth h1{
     font-size: 55px;
-    margin: -10px 0 0 0;
+    margin: -20px 0 0 0;
     text-shadow: 0 0 5px black;
 }
 .Auth form{
